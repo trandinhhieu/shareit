@@ -1,0 +1,40 @@
+<urlrewrite>
+	<rule>
+		<from>/tin-tuc</from>
+		<to>/public/</to>
+	</rule>
+
+	<rule>
+		<from>/(.*)-([0-9]+)/page-([0-9]+).html</from>
+		<to>/public/cat/?cid=$2&amp;page=$3</to>
+	</rule>
+
+	<rule>
+		<from>^/news/page-([0-9]+).html</from>
+		<to>/public/?page=$1</to>
+	</rule>
+
+	<rule>
+		<from>^/(.*)/(.*)-([0-9]+).html</from>
+		<to>/public/detail/?did=$3</to>
+	</rule>
+
+	<rule>
+		<from>/(.*)-([0-9]+).html</from>
+		<to>/public/cat/?cid=$2</to>
+	</rule>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</urlrewrite>
